@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="date">Monday, Sept 30</div>
+            <button class="day-view-toggle">Weekly View</button>
+        </div>
+
+        <ul class="task-list">
+            <h3 style="text-align: center;">Add task</h3>
+            <li>
+                <div class="task-name">Complete CSS Design</div>
+                <div class="task-actions">
+                    <button class="complete-btn">Complete</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </li>
+            <li>
+                <div class="task-name">Learn JavaScript</div>
+                <div class="task-actions">
+                    <button class="complete-btn">Complete</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <button class="add-task-btn">+</button>
+
+    <!-- Modal for Adding Task -->
+    <div class="modal" id="addTaskModal">
+        <div class="modal-content">
+            <h3>Add New Task</h3>
+            <input type="text" placeholder="Task Name" id="taskInput">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
